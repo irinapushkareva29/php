@@ -1,0 +1,51 @@
+body {
+    background-color: bisque;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+h3,h4 {
+    color: red;
+}
+
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+
+.card-header {
+    background-color: black;
+    color: blue;
+}
+
+.card-header {
+    background-color:turquoise;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    color: black;
+    padding-top: 50px;
+}
+
+.card-footer {
+    background-color:turquoise;
+}
+
+#generation, #clear {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-width: medium;
+    border-style: solid;
+    border-color: blue;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
