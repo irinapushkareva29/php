@@ -30,12 +30,12 @@ const personGenerator = {
             "id_2": "Максим",
             "id_3": "Иван",
             "id_4": "Артем",
-            "id_5": "Дмитрий",
-            "id_6": "Никита",
+            "id_5": "Петр",
+            "id_6": "Денис",
             "id_7": "Михаил",
             "id_8": "Даниил",
             "id_9": "Егор",
-            "id_10": "Андрей"
+            "id_10": "Глеб"
         }
     }`,
 
@@ -52,22 +52,6 @@ const personGenerator = {
             "id_8": "Екатерина",
             "id_9": "Виктория",
             "id_10": "Анжелика"
-        }
-    }`,
-
-    patronymicJson: `{
-        "count": 10,
-        "list": {     
-            "id_1": "Владиславов",
-            "id_2": "Иванов",
-            "id_3": "Александров",
-            "id_4": "Алексеев",
-            "id_5": "Робертов",
-            "id_6": "Иосифов",
-            "id_7": "Григорьев",
-            "id_8": "Георгиев",
-            "id_9": "Денисов",
-            "id_10": "Павлов"
         }
     }`,
 
@@ -132,9 +116,9 @@ const personGenerator = {
     
     randomPatronymic: function () {
         if (this.person.gender =='Мужчина') {
-            return this.randomValue(this.patronymicJson) + 'ич';
+            return this.randomValue(this.firstNameMaleJson) + 'ович';
         } else {
-            return this.randomValue(this.patronymicJson) + 'на';
+            return this.randomValue(this.firstNameMaleJson) + 'овна';
         }
     },
 
